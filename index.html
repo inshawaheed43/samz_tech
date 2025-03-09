@@ -22,12 +22,13 @@
       href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
       rel="stylesheet"
     />
+  
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
   </head>
   <style>
     body {
       background-color: #f6e4d6;
       font-family: Raleway;
-     
     }
 
     h1,
@@ -36,11 +37,13 @@
     ul {
       color: #f6e4d6;
     }
-    h2{
-        font-size: 32px;
+    h2 {
+      font-size: 32px;
     }
-    p, ul{
-        font-size: 18px;    }
+    p,
+    ul {
+      font-size: 18px;
+    }
     ul {
       list-style-type: circle;
       padding: 0;
@@ -61,24 +64,78 @@
       top: 40px;
       max-width: 500px;
     }
-    .p1{
-        position: relative;
-        top: 25px;
+    .p1 {
+      position: relative;
+      top: 25px;
     }
-    .temp-div{
-        margin-left: 20px;
+    .temp-div {
+      margin-left: 20px;
     }
-     a{
-        color: #f6e4d6;
-        font-size: 15px;
-        text-decoration: none;
+    a {
+      color: #f6e4d6;
+      font-size: 15px;
+      text-decoration: none;
     }
-    a: hover{
-        color: #f0cfb6;
-       
+    a:hover {
+      color: #f0cfb6;
     }
+    .navbar {
+      background-color: #600c0c;
+      padding: 10px;
+      border-radius: 25px;
+      position: relative;
+      top: 5px;
+      max-width: 1250px;
+      max-height: 80px;
+      margin: 10px;
+    }
+    .navbar ul {
+      display: flex;
+      justify-content: space-around;
+    }
+    .navbar ul li {
+      list-style-type: none;
+    }
+    .navbar ul li a {
+      color: #f6e4d6;
+      font-size: 23px;
+      text-decoration: none;
+      padding-left: 193px;
+      top: 10px;
+      position: relative;
+    }
+    .navbar ul li a:hover {
+   text-shadow: 0px 0px 8px #f0cfb6;
+   transition: 0.5s linear;
+    }
+    .footer{
+      background-color: #600c0c;
+      color: #f6e4d6;
+      text-align: center;
+      padding: 10px;
+      position: relative;
+      top: 50px;
+    }
+    .footer a{
+      color: #f6e4d6;
+      font-size: 20px;
+      text-decoration: none;
+      margin: 10px;
+    }
+
   </style>
   <body>
+    <header>
+      <nav class="navbar">
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Services</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
     <div class="container">
       <div class="container-fluid">
         <div class="row">
@@ -87,27 +144,36 @@
             <h1>My Portfolio</h1>
           </div>
           <div class="col-sm-6">
-            <img src="./profile-pic.png" alt="Profile Picture" />
+            <img src="./pic-1.png" alt="Profile Picture" />
           </div>
         </div>
       </div>
       <div class="temp-div">
-          <h2>About Me</h2>
-          <p>
-            Hey There! This side Insha Waheed, a Frontend Developer who can make
-            experience enjoyful!
-          </p>
-          <h2>My Hobbies</h2>
-          <ul>
-            <li>Coding & Coffee</li>
-            <li>Blogging</li>
-            <li>Reading</li>
-          </ul>
-          <h2>Github Website</h2>
-          <a href="https://inshawaheed43.github.io/samz_tech/">Visit Site</a>
-
+        <h2>About Me</h2>
+        <p>
+          Hey There! This side Insha Waheed, a Frontend Developer who can make
+          experience enjoyful!
+        </p>
+        <h2>My Hobbies</h2>
+        <ul>
+          <li>Coding & Coffee</li>
+          <li>Blogging</li>
+          <li>Reading</li>
+        </ul>
+        <h2>Github Website</h2>
+        <a href="https://inshawaheed43.github.io/samz_tech/">Visit Site</a>
       </div>
     </div>
+    <br><br><br>
+    <!-- Footer -->
+     <footer class="footer">
+      <p>Copyright &copy; 2022 MyPortfolio. All Rights Reserved</p>
+      <p>Visit My Social Profiles</p>
+      <a href="https://github.com/inshawaheed43"><i class="fab fa-github"></i></a>
+      <a href="https://www.linkedin.com/in/insha-w-6a382530b/"><i class="fab fa-linkedin"></i></a>
+      <a href="#"><i class="fab fa-twitter"></i></a>
+      <a href="#"><i class="fab fa-instagram"></i></a>
+    </footer>
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script
